@@ -13,4 +13,12 @@ public class BeanA {
     public void post() {
         log.info("@PostConstruct annotated method is called.");
     }
+
+    private void close() {
+        log.info("close() method is called.");
+    }
+
+    private void shutdown() {
+        log.info("shutdown() method is called.");
+    }
 }
